@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#43ffffff"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_view"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/my_cam"
+            android:src="@drawable/lock_bg"
+            android:scaleType="centerCrop"/>
+        <DigitalClock
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="200dp"
+            android:gravity="center"
+            android:id="@+id/digitalclock"
+            android:textSize="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_text"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_below="@+id/digitalclock"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/battery_text"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="gokul"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_below="@id/date_text"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activityRoot"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="#59000000" >
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBaseline="@+id/b2"
+            android:layout_alignBottom="@+id/b2"
+            android:layout_alignRight="@+id/pin"
+            android:background="#0000"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="3"
+            android:onClick="buttonclick"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBaseline="@+id/b4"
+            android:layout_alignBottom="@+id/b4"
+            android:layout_alignRight="@+id/b2"
+            android:background="#0000"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="5"
+            android:onClick="buttonclick"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBaseline="@+id/b5"
+            android:layout_alignBottom="@+id/b5"
+            android:layout_alignRight="@+id/b3"
+            android:background="#0000"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="6"
+            android:onClick="buttonclick"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/b1"
+            android:layout_below="@+id/b1"
+            android:layout_marginTop="10dp"
+            android:background="#0000"
+            android:onClick="buttonclick"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="4"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBaseline="@+id/b7"
+            android:layout_alignBottom="@+id/b7"
+            android:layout_alignLeft="@+id/b5"
+            android:background="#0000"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="8"
+            android:onClick="buttonclick"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/b0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/b8"
+            android:layout_below="@+id/b8"
+            android:layout_marginTop="10dp"
+            android:background="#0000"
+            android:onClick="buttonclick"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/b7"
+            android:layout_alignTop="@+id/b0"
+            android:background="#0000"
+            android:onClick="buttonclick"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Unlock"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/b0"
+            android:layout_alignLeft="@+id/b6"
+            android:background="#0000"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="9"
+            android:onClick="buttonclick"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/b9"
+            android:layout_alignTop="@+id/b0"
+            android:background="#0000"
+            android:onClick="buttonclick"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="X"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <EditText
+            android:id="@+id/pin"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:ems="10"
+
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="numberPassword"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-thin" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Enter Your Pin"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBaseline="@+id/b1"
+            android:layout_alignBottom="@+id/b1"
+            android:layout_centerHorizontal="true"
+            android:background="#0000"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="2"
+            android:onClick="buttonclick"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/pin"
+            android:layout_below="@+id/pin"
+            android:layout_marginTop="10dp"
+            android:background="#0000"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="1"
+            android:onClick="buttonclick"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/b4"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/b4"
+            android:background="#0000"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="7"
+            android:onClick="buttonclick"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <SurfaceView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/surfaceView"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/pin"
+            android:layout_alignStart="@+id/pin" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
